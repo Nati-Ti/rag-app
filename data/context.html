@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div>
+    {
+      "faq": [
+        {
+          "question": "What is AWS?",
+          "answer": "AWS (Amazon Web Services) is a comprehensive cloud platform that offers a wide range of services including computing power, storage options, and networking capabilities, among others. These services are offered to businesses and individuals to help them scale and grow without investing in physical infrastructure."
+        },
+        {
+          "question": "How do I create an EC2 instance?",
+          "answer": "To create an EC2 instance, go to the AWS Console, select EC2 under Services, click on 'Launch Instance', configure the necessary settings such as instance type, key pairs, security groups, and click 'Launch' to start your instance."
+        },
+        {
+          "question": "What is S3 and how does it work?",
+          "answer": "Amazon S3 (Simple Storage Service) is an object storage service that offers industry-leading scalability, data availability, security, and performance. It allows you to store and retrieve any amount of data at any time. Data is stored in 'buckets' and you can organize it using folders and tags."
+        },
+        {
+          "question": "How do I monitor my AWS resources?",
+          "answer": "You can monitor your AWS resources using AWS CloudWatch, which collects monitoring and operational data in the form of logs, metrics, and events from AWS resources. It provides visibility into resource utilization and can trigger alarms for specific events."
+        },
+        {
+          "question": "What is the difference between EC2 and Lambda?",
+          "answer": "EC2 is a virtual server in the cloud that provides full control over the operating system and software installed, while AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. EC2 is ideal for long-running processes, whereas Lambda is best for short-duration tasks."
+        }
+      ],
+      "troubleshooting": [
+        {
+          "issue": "EC2 instance not responding",
+          "steps": [
+            "Check security group settings to ensure that the proper ports are open.",
+            "Verify the instance's health status in the AWS Console.",
+            "Review system logs for any indication of hardware failure or software errors.",
+            "Ensure that the instance is in a running state, and attempt to restart it if necessary."
+          ]
+        },
+        {
+          "issue": "S3 Bucket access denied",
+          "steps": [
+            "Check the bucket's permissions and ensure the IAM role or user has the necessary S3 access permissions.",
+            "Verify the bucket policy and adjust it to grant the correct access levels.",
+            "Ensure the object you are trying to access has the correct ACL (Access Control List) settings."
+          ]
+        },
+        {
+          "issue": "Lambda function timeout",
+          "steps": [
+            "Check the function's execution timeout in the Lambda console and increase the timeout if necessary.",
+            "Review the function's logs in CloudWatch to identify bottlenecks in the code execution.",
+            "Consider optimizing the function's code for performance and splitting tasks into smaller functions if needed."
+          ]
+        },
+        {
+          "issue": "Unable to connect to RDS instance",
+          "steps": [
+            "Ensure that the database is publicly accessible if it needs to be reached outside the VPC.",
+            "Check the security group and VPC settings to ensure the correct inbound rules for the database connection.",
+            "Review the database's endpoint and port to confirm that they are correct."
+          ]
+        }
+      ],
+      "knowledge_base": [
+        {
+          "title": "Optimizing AWS Costs",
+          "content": "To optimize your AWS costs, consider using EC2 Reserved Instances or Savings Plans for predictable workloads. Utilize AWS Cost Explorer and set budgets and alerts to monitor spending. Additionally, clean up unused resources such as EBS volumes, unattached IP addresses, and idle EC2 instances."
+        },
+        {
+          "title": "Scaling with Auto Scaling Groups",
+          "content": "Auto Scaling Groups allow you to automatically adjust the number of EC2 instances in response to changes in demand. This helps to ensure that you have the right number of instances available to handle your application's load. You can configure scaling policies that define when instances should be added or removed."
+        },
+        {
+          "title": "Understanding IAM (Identity and Access Management)",
+          "content": "AWS IAM allows you to securely control access to AWS services and resources. It enables you to manage users, groups, and roles, and to apply policies that determine who can access which resources. IAM best practices include enabling multi-factor authentication (MFA) and using least privilege principles."
+        },
+        {
+          "title": "Setting Up VPC for Secure Networking",
+          "content": "AWS VPC (Virtual Private Cloud) allows you to define a logically isolated network for your AWS resources. You can configure subnets, route tables, and security groups to control traffic in and out of your network. It's recommended to use private subnets for internal services and public subnets for external-facing services."
+        },
+        {
+          "title": "Disaster Recovery with AWS",
+          "content": "AWS offers various services and strategies for disaster recovery, including multi-region backups, cross-region replication in S3, and automated failover mechanisms for databases like RDS. Consider using AWS Backup to centralize and automate backup processes, and test your recovery procedures regularly."
+        }
+      ]
+    }
+    
+  </div>
+
+
+</body>
+</html>

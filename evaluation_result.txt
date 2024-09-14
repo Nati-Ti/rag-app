@@ -1,0 +1,62 @@
+Query: What are the benefits of using AWS?
+Generated Answer (RAG): 
+Answer: AWS (Amazon Web Services) offers a comprehensive cloud platform with a wide range of services that allow for secure access control through AWS IAM, resource configuration with subnets, route tables, and security groups, and data management through logging, metric, and event collection. Additionally, AWS provides predictable workload utilization and cost monitoring tools like AWS Cost Explorer and budget/alert settings.
+Generated Answer (SWR): 
+    Answer: AWS offers a wide range of services that allow businesses and individuals to scale and grow without investing in physical infrastructure. It provides computing power, storage options, and networking capabilities, among others. AWS also offers security features such as IAM, which enables you to securely control access to AWS services and resources, and VPC, which allows you to define a logically isolated network for your AWS resources. Additionally, AWS offers cost optimization strategies such as using Reserved Instances or Savings Plans for predictable workloads, utilizing AWS Cost Explorer, and cleaning up unused resources.
+Ground Truth: AWS provides scalability, reliability, and a wide range of services that can be used for different types of applications.
+BLEU Score (RAG): 0.08856387214544856
+ROUGE Score (RAG): {'rouge1': Score(precision=0.16393442622950818, recall=0.5263157894736842, fmeasure=0.25), 'rougeL': Score(precision=0.13114754098360656, recall=0.42105263157894735, fmeasure=0.2)}
+F1 Score (RAG): 0.5555555555555556
+
+BLEU Score (SWR): 0.05350911980603496
+ROUGE Score (SWR): {'rouge1': Score(precision=0.11702127659574468, recall=0.5789473684210527, fmeasure=0.19469026548672566), 'rougeL': Score(precision=0.09574468085106383, recall=0.47368421052631576, fmeasure=0.15929203539823006)}
+F1 Score (SWR): 0.5555555555555556
+
+Query: How can I improve the performance of my AWS Lambda function?
+Generated Answer (RAG): 
+Answer: To improve the performance of your AWS Lambda function, you should:
+
+1. Check the function's execution timeout in the Lambda console and increase the timeout if necessary, especially for long-running processes.
+
+2. Ensure that your function is designed for short-duration tasks, as Lambda is best for such tasks.
+
+3. Avoid installing system and software on Lambda, as it is a serverless compute service that lets you run code without provisioning or managing servers.
+
+4. Use AWS Cost Explorer and set budgets and alerts to monitor your costs, and consider using EC2 Reserved Instances or Savings Plans for predictable workloads.
+
+By following these tips, you can optimize the performance and cost-effectiveness of your AWS Lambda functions.
+Generated Answer (SWR): 
+    Answer: To improve the performance of your AWS Lambda function, you can follow these steps:
+    
+    1. Check the function's execution timeout in the Lambda console and increase it if necessary. This will give your function more time to complete its tasks.
+    
+    2. Review the function's logs in CloudWatch to identify bottlenecks in the code execution. This will help you pinpoint any issues that may be causing slow performance.
+    
+    3. Optimize the function's code for performance. This can include techniques like minimizing the number of function calls, using built-in functions instead of custom ones, and avoiding unnecessary loops.
+    
+    4. Split tasks into smaller functions if needed. This can help improve the overall performance of your application by allowing each function to focus on a specific task.
+    
+    5. Use AWS Provisioned Concurrency to improve the performance of frequently invoked functions. This feature allows you to reserve a certain number of concurrent executions for your function, reducing the cold start overhead.
+    
+    6. Use AWS X-Ray to trace requests through your application and identify performance bottlenecks. This can help you pinpoint any issues with your function's dependencies or external services.
+    
+    7. Use AWS AppSync to build real-time applications with offline support. This can help improve the overall performance of your application by reducing the number of requests made to your backend.
+    
+    8. Use AWS Lambda Layers to share common code and libraries across multiple functions. This can help reduce the size of your functions and improve their performance.
+    
+    9. Use AWS Step Functions to orchestrate complex workflows and improve the overall performance of your application. This can help reduce the number of functions required and improve the overall efficiency of your application.
+    
+    10. Use AWS Fargate to run your functions in containers, which can help improve their performance by providing a more isolated and optimized environment.
+    
+    11. Use AWS AppSync and AWS Amplify to build serverless applications with offline support and real-time updates. This can help improve the overall performance of your application by reducing the number of requests made to your backend.
+    
+    12. Use AWS AppSync and AWS Amplify to build real-time applications with offline support and real-time updates. This can help improve
+Ground Truth: You can improve performance by optimizing code, adjusting memory allocation, and using provisioned concurrency.
+BLEU Score (RAG): 8.301113029505914e-232
+ROUGE Score (RAG): {'rouge1': Score(precision=0.08333333333333333, recall=0.7142857142857143, fmeasure=0.14925373134328357), 'rougeL': Score(precision=0.041666666666666664, recall=0.35714285714285715, fmeasure=0.07462686567164178)}
+F1 Score (RAG): 0.35714285714285715
+
+BLEU Score (SWR): 1.2312912435805873e-155
+ROUGE Score (SWR): {'rouge1': Score(precision=0.02972972972972973, recall=0.7857142857142857, fmeasure=0.057291666666666664), 'rougeL': Score(precision=0.024324324324324326, recall=0.6428571428571429, fmeasure=0.046875)}
+F1 Score (SWR): 0.42857142857142855
+

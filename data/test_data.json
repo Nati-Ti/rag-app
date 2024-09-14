@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What are the benefits of using AWS?",
+    "expected_answer": "AWS provides scalability, reliability, and a wide range of services that can be used for different types of applications."
+  },
+  {
+    "question": "Explain the difference between S3 and EBS.",
+    "expected_answer": "Amazon S3 is a scalable object storage service for storing data, while Amazon EBS is a block storage service used for attaching storage volumes to EC2 instances."
+  },
+  {
+    "question": "How can I improve the performance of my AWS Lambda function?",
+    "expected_answer": "You can improve performance by optimizing code, adjusting memory allocation, and using provisioned concurrency."
+  }
+]
